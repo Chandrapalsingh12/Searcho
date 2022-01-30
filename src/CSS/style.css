@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Sans+Condensed:wght@300&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+.fonts {
+    font-family: 'Comfortaa', cursive;
+}
+
+.icons {
+    height: 3rem;
+    width: 8rem;
+}
+
+.container {
+    margin: auto;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .dot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 52.5%;
+    left: 150px;
+    height: 20px;
+    width: 20px;
+    background-color: #031bf3;
+    border-radius: 5rem;
+}
+
+.container .dot:nth-child(1) {
+    left: 80px;
+    animation: waveUp 2s, smallExtend 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.container .dot:nth-child(2) {
+    left: 115px;
+    animation: waveUp 2s, largeExtend 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.15s;
+}
+
+.container .dot:nth-child(3) {
+    animation: waveUp 2s, smallExtend 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+
+.container .dot:nth-child(4) {
+    left: 185px;
+    animation: waveUp 2s, largeExtend 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.45s;
+}
+
+.container .dot:nth-child(5) {
+    left: 220px;
+    animation: waveUp 2s, smallExtend 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+}
+
+@keyframes waveUp {
+    0%, 15% {
+        top: 50%;
+    }
+    45%, 65% {
+        top: 42.5%;
+    }
+    85%, 100% {
+        top: 50%;
+    }
+}
+
+@keyframes smallExtend {
+    0%, 8% {
+        background-color: #f51607;
+        height: 20px;
+    }
+    14%, 34% {
+        background-color: #54c509;
+        height: 47.5px;
+    }
+    46%, 100% {
+        background-color: #0948f7;
+        height: 20px;
+    }
+}
+
+@keyframes largeExtend {
+    0%, 8% {
+        background-color: #08f8d0;
+        height: 20px;
+    }
+    14%, 34% {
+        background-color: #ff00f2;
+        height: 82.5px;
+    }
+    46%, 100% {
+        background-color: #08ff67;
+        height: 20px;
+    }
+}
